@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+      
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(150deg,rgb(214, 240, 68), rgb(47, 147, 218));
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+
+}
+
+.box:hover{
+  animation-play-state: paused;
+}
+
+
+@keyframes animate {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+}
+
+
+
+.box span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 15px;
+  border: 4px double rgb(0, 0, 0);
+}
+
+img:hover{
+  transform: translateY(-2px);
+  
+}
+
+@media (max-width: 768px) {
+  .box span img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box span img {
+    width: 100%;
+  }
+}
+
+</style>
+<title>3D Rotating Image Gallery</title>
+</head>
+<body>
+
+    <div class="box">
+
+        <span style="--i:1"><img src="https://cdni.pornpics.com/460/7/88/78917297/78917297_017_0451.jpg"></span>
+        <span style="--i:2"><img src="https://cdni.pornpics.com/460/7/574/77099551/77099551_058_40a4.jpg"></span>
+        <span style="--i:3"><img src="https://cdni.pornpics.com/460/7/106/19727935/19727935_056_1f79.jpg"></span>
+        <span style="--i:4"><img src="https://cdni.pornpics.com/460/7/543/17008866/17008866_023_23b4.jpg"></span>
+        <span style="--i:5"><img src="https://cdni.pornpics.com/460/7/313/19611605/19611605_029_020b.jpg"></span>
+        <span style="--i:6"><img src="https://cdni.pornpics.com/460/5/237/37309654/37309654_010_b99e.jpg"></span>
+        <span style="--i:7"><img src="https://cdni.pornpics.com/460/7/161/68858257/68858257_023_b0ad.jpg"></span>
+        <span style="--i:8"><img src="https://cdni.pornpics.com/460/1/195/97905945/97905945_005_edd2.jpg"></span>
+        <span style="--i:9"><img src="https://cdni.pornpics.com/460/7/636/45935603/45935603_044_e7db.jpg"></span>
+        <span style="--i:10"><img src="https://cdni.pornpics.com/460/7/102/79424184/79424184_049_ddc3.jpg"></span>
+
+
+    
+
+
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
